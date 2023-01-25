@@ -8,10 +8,15 @@
 
 <style> 
 
+* {
+  border: thin red solid
+}
+
 .items{
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 40px;
+  max-width: 600px;
 }
 
 body {
@@ -34,8 +39,16 @@ body {
   object-fit: cover;
 }
 
+.link {
+  display: flex;
+  align-items: center;
+}
+
 .link a {
+  color:blueviolet;
   text-decoration: none;
+  flex-grow: 1;
+  text-align: center;
 }
 
 </style>
@@ -51,7 +64,11 @@ body {
 </div>
 
 <div class="banner">
-<img src="/thumbnails/LinkedIn.jpg" class="banner-image">
+<img src="/thumbnails/LinkedIn.jpg" alt="Nick Johnson headshot" class="banner-image">
+</div>
+
+<div class = "name">
+  <h3>Nick Johnson</h3>
 </div>
 
 <div class="link">
